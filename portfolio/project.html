@@ -7,22 +7,22 @@
 
 <body class="container my-5">
 
-<h1>Customer Churn Prediction</h1>
+<h1>Geospatial Chicago Crash Analysis</h1>
 
 <h3>Problem</h3>
-<p>Predict which customers are likely to leave.</p>
+<p>Visualize high congestion/problematic spheres of influences within Chicago</p>
 
 <h3>Data</h3>
-<p>Used telecom dataset, cleaned missing values.</p>
+<p>Publically available Chicago dataset</p>
 
-<h3>Model</h3>
-<p>Random Forest, Logistic Regression</p>
+<h3>Methods</h3>
+<p>Crash location data for Chicago was analyzed using spatial analysis techniques with GeoPandas and Shapely. Circular buffers were generated around each crash point using a fixed Euclidean distance to model localized impact zones. Overlapping buffer regions were then identified using spatial intersection methods to detect areas of concentrated crash activity. These overlapping regions were interpreted as high-risk zones, providing a proxy for spatial clustering of incidents. The approach approximates density-based clustering through geometric proximity rather than probabilistic estimation.</p>
 
 <h3>Results</h3>
 <img src="assets/images/chart.png" class="img-fluid">
 
 <h3>Impact</h3>
-<p>Helps businesses reduce churn and increase retention.</p>
+<p>Helps determine high density crash sites within Chicago, which were determined to be high foot traffic areas or structural anomalies such as a near 90 degree turn.</p>
 
 </body>
 </html>
