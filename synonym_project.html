@@ -45,12 +45,12 @@
 
   <h3>Data</h3>
   <p>
-    Subset of Google Books 5-grams dataset (~2 GB, Vocab size = 269339, Potential Synonyn Pairs = 36271613791)
+    Subset of Google Books 5-grams dataset (~2 GB, ~269K vocabulary, ~36B word pairs)
   </p>
 
   <h3>Methods</h3>
   <p>
-    Cosine similarity
+    Cosine similarity (compared with Jaccard, Overlap, and Dice metrics)
   </p>
 
   <h3>Results</h3>
@@ -111,7 +111,9 @@ patients, plain          |0.0081,   0.004,  0.0103, 0.0079
 
   <h3>Impact</h3>
   <p>
-    Allows for understanding of work similarity from an analytical perspective.
+    While the model scales well for analyzing word relationships, the results reveal an important limitation: high similarity scores often reflect common co-occurrence rather than true semantic similarity. Frequently used words (e.g., “time,” “well,” “first”) dominate the top pairs, suggesting the model captures phrase patterns (like “once upon a time”) instead of meaningful synonym relationships.
+
+This highlights the need for frequency weighting methods. Incorporating approaches such as TF-IDF or PMI can better identify word pairs that co-occur more often than expected by chance, leading to more accurate semantic insights.
   </p>
 
 </div>
