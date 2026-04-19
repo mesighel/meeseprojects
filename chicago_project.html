@@ -55,12 +55,26 @@
 
   <h3>Results</h3>
 
-  <img 
-    src="/meeseprojects/assets/projects/chicago_project/map.jpeg"
-    width="100%" 
-    height="450"
-    style="border:1px solid #ccc; border-radius:8px;">
-  </img>
+  <div style="display: flex; gap: 10px; height: 450px;">
+    
+    <!-- Left image (takes half width) -->
+    <div style="flex: 1;">
+      <img src="/meeseprojects/assets/projects/chicago_project/map.jpeg"
+           style="width: 100%; height: 100%; object-fit: cover; border:1px solid #ccc; border-radius:8px;">
+    </div>
+  
+    <!-- Right side (two stacked images) -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
+      
+      <img src="image2.jpg"
+           style="width: 100%; height: 50%; object-fit: cover; border:1px solid #ccc; border-radius:8px;">
+      
+      <img src="image3.jpg"
+           style="width: 100%; height: 50%; object-fit: cover; border:1px solid #ccc; border-radius:8px;">
+    
+    </div>
+  
+  </div>
 
   <h3>Impact</h3>
   <p>
