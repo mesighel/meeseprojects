@@ -53,6 +53,10 @@
     Crash location data for Chicago was analyzed using spatial analysis techniques with GeoPandas and Shapely. Circular buffers were generated around each crash point using a fixed Euclidean distance of the average Chicago block to model localized impact zones. Overlapping buffer regions were then identified using spatial intersection methods to detect areas of concentrated crash activity via heatmap.
   </p>
 
+  <p>
+    Additionally, heatmaps were used to visualize if there any unique loci of crash density throughout a day in Chicago. 
+  </p>
+
   <h3>Results</h3>
   
   <div style="position: relative; display: flex; gap: 10px; height: 450px;">
@@ -79,6 +83,10 @@
   <h3>Impact</h3>
   <p>
     Identifies high-density crash zones in Chicago, often correlated with high foot traffic areas such as clustered shopping centers or structural road design issues such as 90° turns or six lane intersection.
+  </p>
+
+  <p>
+    Time-dependent heatmaps of Chicago showcased the expected density of accidents around downtown especially during communting hours (7-10am, 3-6pm) and socializing hours (9pm-12am) but does not elucidate any new loci of crash density that changes thoughout the day.   
   </p>
 
 </div>
